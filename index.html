@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AO Getaway | Inlet Beach, 30A</title>
+<meta name="description" content="AO Getaway is a beach house rental in Inlet Beach, Florida, on 30A. Opening soon.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sand: #EADFC8;
+    --foam: #F7F4EE;
+    --gulf: #1D4A55;
+    --seaglass: #A9D3C9;
+    --shade: rgba(14, 38, 44, 0.72);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Figtree", system-ui, -apple-system, sans-serif;
+    color: var(--foam);
+    background: var(--gulf);
+  }
+  .hero {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: max(2rem, env(safe-area-inset-top)) clamp(1.5rem, 6vw, 5rem)
+             max(2.5rem, env(safe-area-inset-bottom));
+    background:
+      linear-gradient(to top, var(--shade) 0%, rgba(14,38,44,0.25) 45%, rgba(14,38,44,0) 70%),
+      url("beach.jpg") center 60% / cover no-repeat,
+      linear-gradient(180deg, #8FC3D6 0%, #CFE3E2 48%, var(--sand) 49%, #D9C7A4 100%);
+  }
+  h1 {
+    font-family: "Gloock", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(3.4rem, 13vw, 9.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    max-width: 10ch;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.25);
+  }
+  .where {
+    margin-top: 1rem;
+    font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+    font-weight: 500;
+    color: var(--sand);
+  }
+  .note {
+    margin-top: 2rem;
+    max-width: 34rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(234, 223, 200, 0.45);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .note a {
+    color: var(--seaglass);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    font-weight: 500;
+  }
+  .note a:hover { color: var(--foam); }
+  .note a:focus-visible { outline: 2px solid var(--seaglass); outline-offset: 3px; }
+  footer {
+    margin-top: 2.5rem;
+    font-size: 0.85rem;
+    color: rgba(247, 244, 238, 0.7);
+  }
+</style>
+</head>
+<body>
+  <main class="hero">
+    <h1>AO Getaway</h1>
+    <p class="where">A beach house in Inlet Beach, Florida, just off 30A</p>
+    <p class="note">
+      We're getting the house ready for guests. To ask about dates or get on the list for opening,
+      email <a href="mailto:info@aogetaway.com">info@aogetaway.com</a>.
+    </p>
+    <footer>&copy; <span id="yr">2026</span> AO Getaway</footer>
+  </main>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
