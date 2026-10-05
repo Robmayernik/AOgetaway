@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Anchor &amp; Oak | Inlet Beach, 30A</title>
-<meta name="description" content="Anchor &amp; Oak Getaway is a beach house rental in Inlet Beach, Florida, on 30A. Opening soon.">
+<meta name="description" content="Anchor &amp; Oak is a beach house rental in Inlet Beach, Florida, on 30A. Opening soon.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --sand: #EADFC8;
@@ -37,26 +37,16 @@
       url("beach.jpg") center 60% / cover no-repeat,
       linear-gradient(180deg, #8FC3D6 0%, #CFE3E2 48%, var(--sand) 49%, #D9C7A4 100%);
   }
-  h1 {
-    font-family: "Gloock", Georgia, "Times New Roman", serif;
-    font-weight: 400;
-    font-size: clamp(3rem, 10vw, 8rem);
-    line-height: 0.92;
-    letter-spacing: -0.02em;
-    max-width: 14ch;
-    text-shadow: 0 2px 24px rgba(0,0,0,0.25);
-  }
-  .where {
-    margin-top: 1rem;
-    font-size: clamp(1.05rem, 2.4vw, 1.35rem);
-    font-weight: 500;
-    color: var(--sand);
+  h1 { margin: 0; }
+  .logo {
+    display: block;
+    width: min(100%, 760px);
+    height: auto;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.35));
   }
   .note {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     max-width: 34rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid rgba(234, 223, 200, 0.45);
     font-size: 1.05rem;
     line-height: 1.6;
   }
@@ -77,13 +67,12 @@
 </head>
 <body>
   <main class="hero">
-    <h1>Anchor &amp; Oak<br>Getaway</h1>
-    <p class="where">A beach house in Inlet Beach, Florida, just off 30A</p>
+    <h1><img class="logo" src="logo.png" alt="Anchor &amp; Oak, Inlet Beach, 30A, Emerald Coast" width="1600" height="527"></h1>
     <p class="note">
-      We're getting the house ready for guests. To ask about dates or get on the list for opening,
+      A beach house in Inlet Beach, Florida, just off 30A. We're getting it ready for guests. To ask about dates or get on the list for opening,
       email <a href="mailto:info@aogetaway.com">info@aogetaway.com</a>.
     </p>
-    <footer>&copy; <span id="yr">2026</span> Anchor &amp; Oak Getaway</footer>
+    <footer>&copy; <span id="yr">2026</span> Anchor &amp; Oak</footer>
   </main>
   <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
 </body>
