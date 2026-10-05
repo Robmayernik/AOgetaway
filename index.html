@@ -29,23 +29,26 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: max(2rem, env(safe-area-inset-top)) clamp(1.5rem, 6vw, 5rem)
              max(2.5rem, env(safe-area-inset-bottom));
     background:
-      linear-gradient(to top, var(--shade) 0%, rgba(14,38,44,0.25) 45%, rgba(14,38,44,0) 70%),
+      linear-gradient(to bottom, rgba(14,38,44,0.38) 0%, rgba(14,38,44,0.12) 30%, rgba(14,38,44,0) 45%),
+      linear-gradient(to top, var(--shade) 0%, rgba(14,38,44,0.25) 35%, rgba(14,38,44,0) 55%),
       url("beach.jpg") center 60% / cover no-repeat,
       linear-gradient(180deg, #8FC3D6 0%, #CFE3E2 48%, var(--sand) 49%, #D9C7A4 100%);
   }
   h1 { margin: 0; }
   .logo {
     display: block;
-    width: min(100%, 760px);
+    width: min(100%, 720px);
     height: auto;
+    margin: clamp(1rem, 6vh, 4rem) auto 0;
     filter: drop-shadow(0 2px 14px rgba(0,0,0,0.35));
   }
   .note {
-    margin-top: 1.5rem;
+    margin-top: auto;
+    padding-top: 2rem;
     max-width: 34rem;
     font-size: 1.05rem;
     line-height: 1.6;
